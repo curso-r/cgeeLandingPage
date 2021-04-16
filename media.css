@@ -1,0 +1,27 @@
+@media only screen and (max-height: 718px) {
+    .svg-container{
+        top: 0%;
+        left: 0px;
+        width: 511.28px;
+        height: 414.1368px;
+    }
+    #image-home{
+        margin-top:0px;
+        margin-left: 0px;
+        height:414.1368px;
+        width: 511.28px;
+    }
+}
+@media only screen and (max-height: 519px) {
+    .svg-container{
+        top:0%;
+        left: 0px;
+        width: 306.768px;
+        height: 248.64px;
+    }
+    #image-home{
+        height:248.64px;
+        margin-left: 0px;
+        width: 306.768px;
+    }
+}
