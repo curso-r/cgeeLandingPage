@@ -1,3 +1,16 @@
+@media only screen and (max-device-width: 576px) and (orientation: portrait) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
 .sobre {
   background-color: rgba(255, 255, 255, 1) !important;
   color: black;
