@@ -1,81 +1,13 @@
-.sobre {
-  background-color: rgba(255, 255, 255, 1) !important;
-  color: black;
-  font-size: 19px;
-  text-align: justify;
+
+body{
+    overflow: hidden;
 }
-
-.sobre-linha {
-  border-top: 2%;
-}
-
-.sobre-body {
-  z-index: -1;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-html { overflow:auto; }
-
-.texto-principal{
-    margin-top: 2%;
-}
-
-.responsive-iframe {
-  display: block;  
-  top: 7%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  max-height: 1600px;
-}
-
-.fundo-barra {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-  opacity: .9;
-  font-size: 19px;
-}
-
-.titulo-principal {
-  color: white;
-}
-
-.navbar-brand {
-  color: white !important;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
-}
-
-
-a.navbar-link {
-  color: white;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
-}
-
-.botao-href {
-  margin-top: 100px;
-  background-color: #AFD7DD !important;
-  color: #222A35 !important;
-  font-size: 23px !important;
-}
-
-.corpo-dash{
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
 .fundo {
   background: url(./Fundo-Layout-Site-Energy-EIP.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .home-section .svg-container #svg-home .shine,
 .home-section .svg-container #svg-home .text-animated {
   opacity: 0;
@@ -148,13 +80,17 @@ a.navbar-link {
 
 .glitter-animate {
   transform-origin: 50% 50%;
-  transform-box: fill-box;
-  animation: glitter 20s linear 20s infinite normal;
-  -webkit-animation: glitter 20s linear 20s infinite normal;
-  -moz-animation: glitter 20s linear 20s infinite normal;
-  -ms-animation: glitter 20s linear 20s infinite normal;
-  -o-animation: glitter 20s linear 20s infinite normal;
-  text-shadow: -1px 0 #00687e, 0 1px #00687f, 1px 0 #00687f, 0 -1px #00687f;
+    transform-box: fill-box;
+    /* animation: glitter 5s linear 5s infinite normal;
+  -webkit-animation: glitter 5s linear 5s infinite normal;
+  -moz-animation: glitter 5s linear 5s infinite normal;
+  -ms-animation: glitter 5s linear 5s infinite normal;
+  -o-animation: glitter 5s linear 5s infinite normal; */
+  animation: text_home_animation 10s linear 5s infinite normal;
+  -webkit-animation: text_home_animation 10s linear 5s infinite normal;
+  -moz-animation: text_home_animation 10s linear 5s infinite normal;
+  -ms-animation: text_home_animation 10s linear 5s infinite normal;
+  -o-animation: text_home_animation 10s linear 5s infinite normal;
 }
 
 .text-animate {
@@ -208,7 +144,13 @@ a.navbar-link {
   
 } */
 .st0{fill:#FFFFFF;}
-	.st1{font-family:'Roboto-Bold';}
+.text-shadow{text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+	.st1{
+    font-family: Arial Black;
+    font-weight: bold !important;
+    text-transform: lowercase;
+    letter-spacing: -2px;
+  }
 	.st2{font-size:40.067px;}
 	.st3{font-size:35.5537px;}
 	.st4{font-size:43.8786px;}
@@ -221,7 +163,7 @@ a.navbar-link {
 	.st11{font-size:35.9179px;}
 	.st12{font-size:31.9542px;}
 	.st13{font-size:35.8079px;}
-	.st14{font-size:42.4481px;}
+	.st14{font-size:35px;}
 	.st15{font-size:38.1454px;}
 	.st16{font-size:40.1828px;}
 	.st17{font-size:44.953px;}
