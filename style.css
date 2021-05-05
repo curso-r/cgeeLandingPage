@@ -1,16 +1,11 @@
 .sobre {
-  background-color: rgba(255, 255, 255, 1) !important;
-  color: black;
+  color: white;
   font-size: 19px;
   text-align: justify;
 }
 
 .sobre-linha {
   border-top: 2%;
-}
-
-.sobre-body {
-  z-index: -1;
 }
 
 body {
@@ -69,11 +64,32 @@ a.navbar-link {
   overflow: hidden;
 }
 
-.fundo {
+
+body.sobre-body {
+  position: relative;
+}
+
+body.sobre-body::after{
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
   background: url(./Fundo-Layout-Site-Energy-EIP.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  filter: blur(8px);
+}
+
+body.outros-body::after{
+  content: "";
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  z-index: -1;
+  position: absolute;
+  background: url(./Fundo-Layout-Site-Energy-EIP.png);
 }
 
 .home-section .svg-container #svg-home .shine,
