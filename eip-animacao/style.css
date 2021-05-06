@@ -40,6 +40,7 @@ body{
   height: 100%;
   overflow: hidden;
 }
+
 .fundo {
   background: url(./Fundo-Layout-Site-Energy-EIP.png);
   background-size: cover;

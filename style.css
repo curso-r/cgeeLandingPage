@@ -83,28 +83,47 @@ body.sobre-body {
   position: relative;
 }
 
-body.sobre-body::after{
+body.sobre-body::before{
   content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 100%;
+  width: 100%;
   z-index: -1;
   position: absolute;
   background: url(./Fundo-Layout-Site-Energy-EIP.png);
-  filter: blur(8px);
+    overflow: hidden;
+
 }
 
-body.outros-body::after{
+body.dash-body {
+  position: relative;
+}
+
+body.dash-body::before{
   content: "";
-  top: -15px;
-  left: -15px;
-  right: -15px;
-  bottom: -15px;
+  height: 100%;
+  width: 100%;
   z-index: -1;
   position: absolute;
   background: url(./Fundo-Layout-Site-Energy-EIP.png);
 }
+
+body.main-body {
+  position: relative;
+}
+
+body.main-body::before{
+  margin: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  position: absolute;
+  background: url(./Fundo-Layout-Site-Energy-EIP.png);
+}
+
 
 .home-section .svg-container #svg-home .shine,
 .home-section .svg-container #svg-home .text-animated {

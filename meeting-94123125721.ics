@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+PRODID:-//zoom.us//iCalendar Event//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+CLASS:PUBLIC
+BEGIN:VTIMEZONE
+TZID:America/Sao_Paulo
+TZURL:http://tzurl.org/zoneinfo-outlook/America/Sao_Paulo
+X-LIC-LOCATION:America/Sao_Paulo
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0200
+TZNAME:BRST
+DTSTART:19701018T000000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=3SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0300
+TZNAME:BRT
+DTSTART:19700215T000000
+RRULE:FREQ=YEARLY;BYMONTH=2;BYDAY=3SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20210505T152521Z
+DTSTART:20210508T120000Z
+DTEND:20210508T160000Z
+SUMMARY:Faxina de Dados
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20210522T190000Z;INTERVAL=1;BYDAY=SA
+UID:ZOOM94123125721
+TZID:America/Sao_Paulo
+DESCRIPTION:Curso-R está convidando você para uma reunião Zoom agendada.\
+ n\nEntrar na reunião Zoom\nhttps://zoom.us/j/94123125721\n\nID da reuniã
+ o: 941 2312 5721\nDispositivo móvel de um toque\n+19292056099\,\,9412312
+ 5721# Estados Unidos (New York)\n+12532158782\,\,94123125721# Estados Un
+ idos (Tacoma)\n\nDiscar pelo seu local\n        +1 929 205 6099 Estados 
+ Unidos (New York)\n        +1 253 215 8782 Estados Unidos (Tacoma)\n    
+     +1 301 715 8592 Estados Unidos (Washington DC)\n        +1 312 626 6
+ 799 Estados Unidos (Chicago)\n        +1 346 248 7799 Estados Unidos (Ho
+ uston)\n        +1 669 900 6833 Estados Unidos (San Jose)\nID da reunião
+ : 941 2312 5721\nLocalizar seu número local: https://zoom.us/u/adtoNM5Mf
+ B\n
+LOCATION:https://zoom.us/j/94123125721
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
