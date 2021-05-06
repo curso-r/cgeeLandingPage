@@ -87,6 +87,7 @@ body.sobre-body {
   height: 91vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  line-height: 30px;
 }
 
 .sobre-body h1 {
