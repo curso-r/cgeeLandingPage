@@ -13,18 +13,13 @@
 */
 
 .sobre {
-  background-color: rgba(255, 255, 255, 1) !important;
-  color: black;
+  color: white;
   font-size: 19px;
   text-align: justify;
 }
 
 .sobre-linha {
   border-top: 2%;
-}
-
-.sobre-body {
-  z-index: -1;
 }
 
 body {
@@ -44,7 +39,7 @@ html { overflow:auto; }
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: 88%;
   border: 0;
   max-height: 1600px;
 }
@@ -83,12 +78,52 @@ a.navbar-link {
   overflow: hidden;
 }
 
-.fundo {
+
+body.sobre-body {
+  position: relative;
+}
+
+body.sobre-body::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
   background: url(./Fundo-Layout-Site-Energy-EIP.png);
+    overflow: hidden;
+
+}
+
+body.dash-body {
+  position: relative;
+}
+
+body.dash-body::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  background: url(./Fundo-Layout-Site-Energy-EIP.png);
+}
+
+body.main-body {
+  position: relative;
+}
+
+body.main-body::before{
+  margin: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -1;
+  position: absolute;
+  background: url(./Fundo-Layout-Site-Energy-EIP.png);
 }
+
 
 .home-section .svg-container #svg-home .shine,
 .home-section .svg-container #svg-home .text-animated {
