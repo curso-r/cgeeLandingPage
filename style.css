@@ -54,6 +54,10 @@ html { overflow:auto; }
   color: white;
 }
 
+.nav-item {
+  margin-left: 20px;
+}
+
 .navbar-brand {
   color: white !important;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
@@ -63,6 +67,13 @@ html { overflow:auto; }
 a.navbar-link {
   color: white;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
 
 .botao-href {
@@ -81,6 +92,10 @@ a.navbar-link {
 
 body.sobre-body {
   position: relative;
+}
+
+.main-body .home-section {
+  padding: 0 50px;
 }
 
 .sobre-body .home-section {
@@ -110,8 +125,19 @@ body.sobre-body::before{
   z-index: -1;
   position: absolute;
   background: url(./File.jpg);
-    overflow: hidden;
+  overflow: hidden;
+}
 
+.sobre-body h1 {
+  font-size: 2em;
+}
+
+.sobre-body h2 {
+  font-size: 1.6em;
+}
+
+.sobre-body h1, .sobre h2 {
+  text-transform: uppercase;
 }
 
 body.dash-body {
@@ -301,11 +327,15 @@ body.main-body::before{
 	.st22{font-size:42.4139px;}
 	.st23{font-size:39.2092px;}
 
-  .top-site .navbar {
-    height: 50px;
-    max-height: 50px;
-    padding: 0 15px;
-    background-color: rgba(0, 0, 0, 0.2) !important;
+.top-site .navbar {
+  height: 50px;
+  max-height: 50px;
+  padding: 0 15px;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.navbar {
+  z-index: 1000;
 }
 
 .top-site .navbar-brand {
@@ -333,4 +363,10 @@ body.main-body::before{
 .top-site .link-site-top a {
     color: #FFF;
     text-decoration: none;
+}
+
+.logos img {
+  margin: 30px;
+  max-width: 150px;
+  max-height: 100px;
 }
