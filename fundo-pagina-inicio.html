@@ -8,7 +8,56 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous">
     </script>
-    <script src="/assets/js/start.js">
+    <script src="./start.js">
+      $( document ).ready(function() {
+    console.log( "ready!" );
+    var shines = $('.shine');
+    var texts = $('.text-animated');
+    for (let index = 0; index < shines.length; index++) {
+        var el = shines[index];
+        const delay = (index) +1+ 's';
+        // const delay = 1 + 's';
+        el.classList.add("glitter-animate");
+        el.style.animationDelay       = delay;
+        el.style.webkitAnimationDelay = delay;
+        el.style.msAnimationDelay     = delay;
+        el.style.monAnimationDelay    = delay;
+    }
+    // for (let index = 0; index < texts.length; index++) {
+    //     const el = texts[index];
+    //     const delay = (index%5 === 0) ? '0s' : (Math.random() * ((20 - 1)* texts.length) + 1) + 's';
+    //     el.classList.add("text-animate");
+    //     el.style.animationDelay       = delay;
+    //     el.style.msAnimationDelay     = delay;
+    //     el.style.webkitAnimationDelay = delay;
+    //     el.style.monAnimationDelay    = delay;
+    // }
+
+
+    var palavras=[
+        {id:'armazenamento',value:"Armazenamento"},
+        {id:'big_push',value:"Big Push"},
+        {id:'bioenergia',value:"Bioenergia"},
+        {id:'desenvolvimento',value:"Desenvolvimento"},
+        {id:'dados_abertos',value:"Dados Abertos"},
+        {id:'eficiencia_energetica',value:'Eficiência Energética'},
+        {id:'energias_renovaveis',value:'Energias Renováveis'},
+        {id:'hidrogenio',value:'Hidrogênio'},
+        {id:'indicadores',value:'Indicadores'},
+        {id:'inovacao',value:'Inovação'},
+        {id:'oportunidades',value:"Oportunidades"},
+        {id:'parcerias',value:'Parcerias'},
+        {id:'pesquisa_desenvolvimento',value:'Pesquisa & Desenvolvimento'},
+        {id:'politicas_publicas',value:'Políticas públicas'},
+        {id:'reducao_emissoes',value:'Redução de Emissões'},
+        {id:'seguranca_energetica',value:'Segurança energética'},
+        {id:'solar',value:'Solar'},
+        {id:'solucoes_sustentaveis',value:'Soluções Sustentáveis'},
+        {id:'transformacao_digital',value:'Transformação Digital'},
+        {id:'transicao_energetica',value:'Transição Energética'}
+    ]
+  
+});
     </script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media.css">
@@ -20,7 +69,7 @@
     <section>
         <!--<nav class="navbar navbar-expand-md navbar-dark bg-dark">-->
         <nav class="navbar navbar-expand-lg navbar-dark fundo-barra">
-  <a class="navbar-brand" href="https://www.epe.gov.br/" target = "_blank"><img src="./logo_bola.png" style = 'width: 12.5%;'></a>
+  <a class="navbar-brand" href="./fundo-pagina-inicio.html" target = "_blank"><img src="./logo_bola.png" style = 'width: 12.5%;'></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -55,8 +104,9 @@
      <div class="container" style="max-width: 1600px;">
         <div class="row">
         <div class="col-md-6 home-figure" >
-            <img src = './logo_inova_letra.png' width = "50%" style = "object-fit: cover; object-position: -20% 0;">
+            <img src = './logo_inova_letra.png' width = "75%" style = "object-fit: cover; object-position: -20% 0;">
             <h2 class = "titulo-principal" style="font-size: 2em">Panorama dos investimentos de inovação em energia no Brasil</h2>
+            <div class = "container">
              <div class = "row botoes">
                   <div class = "col-md-6">
         <p>
@@ -68,14 +118,87 @@
           <a href="https://www.cepal.org/sites/default/files/publication/files/45908/S2000343_pt.pdf" class="btn btn-lg btn-secondary botao-href">Acesse o Estudo</a>
         </p>
                 </div>
-
-
-
         </div>
+        </div>
+
+
         </div>
         
         <div class="home-figure col-md-6" >
-            <object data = "./Palavras Chaves.svg">
+            <div class="svg-container container-svg">
+                <svg version="1.1" id="svg-home" xmlns="http://www.w3.org/2000/svg" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 913.12 781.28" style="enable-background:new 0 0 913.12 781.28;" 
+                xml:space="preserve">
+
+                    <g id="shine-group">
+                        <!-- <g class="shine glitter-animate" style="animation-delay: 16.0572s;">
+                            <text transform="matrix(1 0 0 1 470 720)" class="st0 st1 st14">Armazenamento</text>
+                        </g> -->
+                        <g class="shine glitter-animate" style="animation-delay: 1s;">
+                            <text transform="matrix(1 0 0 1 320 640)" class="st0 st1 st14">Big Push </text>
+                        </g>
+                        <!-- <g class="shine glitter-animate" style="animation-delay: 16.0572s;">
+                            <text transform="matrix(1 0 0 1 102.3626 595.4168)" class="st0 st1 st14">Bioenergia</text>
+                        </g> -->
+                        <g class="shine glitter-animate" style="animation-delay: 2s;">
+                            <text transform="matrix(1 0 0 1 490 265)" class="st0 st1 st14">Futuro</text>
+                        </g>
+                        <g class="shine glitter-animate" style="animation-delay: 3s;">
+                            <text transform="matrix(1 0 0 1 80 220)" class="st0 st1 st14">Brasil </text>
+                        </g>
+                        <g class="shine glitter-animate" style="animation-delay: 4s;">
+                            <text transform="matrix(1 0 0 1 78 415)" class="st0 st1 st14">Eficiência</text>
+                            <!-- <text transform="matrix(1 0 0 1 40 495)" class="st0 st1 st14"></text> -->
+                        </g>
+                
+                        <g class="shine glitter-animate" style="animation-delay: 5s;">
+                            <text transform="matrix(1 0 0 1 560 647)" class="st0 st1 st14">Renováveis</text>
+                        </g>
+                        <!-- <g class="shine glitter-animate" style="animation-delay: 16.0572s;">
+                            <text transform="matrix(1 0 0 1 185.8808 126.3223)" class="st0 st1 st14">Hidrogênio</text>
+                        </g>
+                        
+                        <g class="shine glitter-animate" style="animation-delay: 16.0572s;">
+                            <text transform="matrix(1 0 0 1 561.7394 594.8241)" class="st0 st1 st14">Indicadores </text>
+                        </g> -->
+                        <g class="shine glitter-animate" style="animation-delay: 6s;">
+                            <text transform="matrix(1 0 0 1 113 525)" class="st0 st1 st14">desenvolvimento</text>
+                        </g>
+                        <g class="shine glitter-animate" style="animation-delay: 7s;">
+                            <text transform="matrix(1 0 0 1 580 218)" class="st0 st1 st14">dados</text>
+                        </g>
+                        <g class="shine glitter-animate" style="animation-delay: 8s;">
+                            <text transform="matrix(1 0 0 1 160 250)" class="st0 st1 st14">industria</text>
+                        </g>
+                        
+                        <g class="shine glitter-animate" style="animation-delay: 10s;">
+                            <text transform="matrix(1 0 0 1 500 440)" class="st0 st1 st14">investimento</text>
+                        </g>
+                        <g class="shine glitter-animate" style="animation-delay: 11s;">
+                            <text transform="matrix(1 0 0 1 350 485)" class="st0 st1 st14">inovação</text>
+                        </g>
+                        <g class="shine glitter-animate" style="animation-delay: 12s;">
+                            <text transform="matrix(1 0 0 1 190 360)" class="st0 st1 st14">Segurança</text>
+                        </g>
+                        <!-- <g class="shine glitter-animate" style="animation-delay: 16.0572s;">
+                            <text transform="matrix(1 0 0 1 150.8808 170.3223)" class="st0 st1 st14">Solar</text>
+                        </g> -->
+                        <g class="shine glitter-animate" style="animation-delay: 13s;">
+                            <text transform="matrix(1 0 0 1 470 594)" class="st0 st1 st14">Soluções</text>
+                        </g>
+                        <g class="shine glitter-animate" style="animation-delay: 14s;">
+                            <text transform="matrix(1 0 0 1 430 730)" class="st0 st1 st14">eólica</text>
+                        </g>
+                        <g class="shine glitter-animate" style="animation-delay: 15s;">
+                            <text transform="matrix(1 0 0 1 400 155)" class="st0 st1 st14">solar</text>
+                        </g>
+                        <g class="shine glitter-animate" style="animation-delay: 9s;">
+                            <text transform="matrix(1 0 0 1 295 275)" class="st0 st1 st14">Pesquisa</text>
+                        </g>
+                    </g>
+                </svg>
+            </div>
         </div>
         <!-- <div id="lights">
             <div class="bulb"></div>

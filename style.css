@@ -12,6 +12,120 @@
 }
 */
 
+.home-section .svg-container #svg-home .shine,
+.home-section .svg-container #svg-home .text-animated {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  opacity: 0;
+}
+
+.fundo-branco {
+  background-color: white;
+  color: #37363d;
+}
+
+#svg-home {
+  z-index: 1000;
+}
+/* .svg-container{
+    position: absolute;
+    top: 10%;
+    left: calc(100% - 860px);
+    width: 50%;
+    height: 80%
+} */
+/* #image-home{
+    margin-top: 6%;
+    margin-left: calc(100% - 900px); 
+} */
+
+.text-animate {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: text_home_animation 10s linear 5s infinite normal;
+  -webkit-animation: text_home_animation 10s linear 5s infinite normal;
+  -moz-animation: text_home_animation 10s linear 5s infinite normal;
+  -ms-animation: text_home_animation 10s linear 5s infinite normal;
+  -o-animation: text_home_animation 10s linear 5s infinite normal;
+}
+
+@keyframes glitter {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+  75% {
+    -webkit-transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes text_home_animation {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0.7);
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scale(1.4);
+    opacity: 0;
+  }
+}
+/* .home-figure {
+  
+} */
+.st0{fill:#FFFFFF;}
+.text-shadow{text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+	.st1{
+    /*font-family: Arial Black;*/
+    font-weight: bold !important;
+    text-transform: lowercase;
+    letter-spacing: -2px;
+  }
+	.st2{font-size:40.067px;}
+	.st3{font-size:35.5537px;}
+	.st4{font-size:43.8786px;}
+	.st5{font-size:39.8745px;}
+	.st6{font-size:40.9834px;}
+	.st7{font-size:39.6217px;}
+	.st8{font-size:40.8141px;}
+	.st9{font-size:36.9958px;}
+	.st10{font-size:43.4972px;}
+	.st11{font-size:35.9179px;}
+	.st12{font-size:31.9542px;}
+	.st13{font-size:35.8079px;}
+	.st14{font-size:35px;}
+	.st15{font-size:38.1454px;}
+	.st16{font-size:40.1828px;}
+	.st17{font-size:44.953px;}
+	.st18{font-size:38.89px;}
+	.st19{font-size:35.9866px;}
+	.st20{font-size:44.7417px;}
+	.st21{font-size:41.3201px;}
+	.st22{font-size:42.4139px;}
+	.st23{font-size:39.2092px;}
+
+.top-site .navbar {
+    height: 50px;
+    max-height: 50px;
+    padding: 0 15px;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
 .sobre {
   color: white;
   font-size: 19px;
@@ -52,6 +166,11 @@ html { overflow:auto; }
 
 .titulo-principal {
   color: white;
+  margin-left: 3.5%;
+}
+
+.margem-alinhamento{
+  margin-left: 3.5%;
 }
 
 .nav-item {
@@ -96,7 +215,7 @@ body.sobre-body {
 }
 
 .main-body .home-section {
-  padding: 0 50px;
+  padding: 0 0px;
 }
 
 .sobre-body .home-section {
@@ -244,13 +363,17 @@ body.main-body::before{
 
 .glitter-animate {
   transform-origin: 50% 50%;
-  transform-box: fill-box;
-  animation: glitter 20s linear 20s infinite normal;
-  -webkit-animation: glitter 20s linear 20s infinite normal;
-  -moz-animation: glitter 20s linear 20s infinite normal;
-  -ms-animation: glitter 20s linear 20s infinite normal;
-  -o-animation: glitter 20s linear 20s infinite normal;
-  text-shadow: -1px 0 #00687e, 0 1px #00687f, 1px 0 #00687f, 0 -1px #00687f;
+    transform-box: fill-box;
+    /* animation: glitter 5s linear 5s infinite normal;
+  -webkit-animation: glitter 5s linear 5s infinite normal;
+  -moz-animation: glitter 5s linear 5s infinite normal;
+  -ms-animation: glitter 5s linear 5s infinite normal;
+  -o-animation: glitter 5s linear 5s infinite normal; */
+  animation: text_home_animation 10s linear 5s infinite normal;
+  -webkit-animation: text_home_animation 10s linear 5s infinite normal;
+  -moz-animation: text_home_animation 10s linear 5s infinite normal;
+  -ms-animation: text_home_animation 10s linear 5s infinite normal;
+  -o-animation: text_home_animation 10s linear 5s infinite normal;
 }
 
 .text-animate {
@@ -300,11 +423,14 @@ body.main-body::before{
     opacity: 0;
   }
 }
-/* .home-figure {
-  
-} */
+
+.container-svg {
+  margin-bottom: 15%;
+  margin-left: 15%;
+}
+
 .st0{fill:#FFFFFF;}
-	.st1{font-family:'Roboto-Bold';}
+	.st1{}
 	.st2{font-size:40.067px;}
 	.st3{font-size:35.5537px;}
 	.st4{font-size:43.8786px;}
