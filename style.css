@@ -93,7 +93,6 @@
 	.st1{
     /*font-family: Arial Black;*/
     font-weight: bold !important;
-    text-transform: lowercase;
     letter-spacing: -2px;
   }
 	.st2{font-size:40.067px;}
@@ -196,11 +195,12 @@ a.navbar-link {
 }
 
 .botao-href {
-  width: 99%;
+  width: 66%;
   margin-top: 50px;
   background-color: #AFD7DD !important;
   color: #222A35 !important;
-  font-size: 23px !important;
+  font-size: 18px !important;
+  margin-left: 5px;
 }
 
 .corpo-dash{
@@ -494,6 +494,6 @@ body.main-body::before{
 
 .logos img {
   margin: 30px;
-  max-width: 150px;
-  max-height: 100px;
+  max-width: 250px;
+  max-height: 200px;
 }
